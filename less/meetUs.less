@@ -1,0 +1,190 @@
+body {
+    background-color: seashell;
+  }
+  
+  .meetUsPage {
+    background-image: url(../images/Background-images/agriculture-background-bell-pepper-broccoli.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  
+    @media (max-width: 720px) {
+      background-image: none;
+      background-color: #f2e9d4;
+    }
+  
+  
+  }
+  .meet-us {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+    }
+  
+  
+    .panel {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      padding: 30px 0;
+      background-color: @chefYellow;
+      border: 4px solid @chefBrown;
+      border-radius: 10px;
+      box-shadow: 5px 10px 10px;
+      width: 70%;
+      height: 100%;
+  
+      @media (max-width: 1200px) and (min-width: 800px) {
+        width: 90%;
+      }
+      @media (max-width: 799px) {
+        width: 97%;
+      }
+  
+      &:hover {
+        background-color: @chefBrown;
+        color: seashell;
+        border: 4px solid @chefYellow;
+      }
+  
+      .panel-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50px;
+        width: 100%;
+        margin: auto;
+  
+        @media (max-width: 720px) {
+          flex-direction: column;
+          align-content: space-evenly;
+          height: 100px;
+        }
+  
+        h3 {
+          font-size: 2rem;
+          display: flex;
+          align-self: center;
+          font-weight: bolder;
+          padding-bottom: 10px;
+          
+  
+          @media (max-width: 1000px) {
+            font-size: 1.6rem;
+          }
+  
+          @media (max-width: 720px) {
+            margin: 0;
+          }
+        }
+  
+        h4 {
+          font-size: 1.6rem;
+          display: flex;
+          align-self: center;
+  
+          @media (max-width: 1000px) {
+            font-size: 1.4rem;
+            margin: 0;
+          }
+        }
+  
+        .panel-buttons {
+          @media (max-width: 720px) {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+      
+          }
+  
+          .button {
+            cursor: pointer;
+          }
+          .hide-button {
+            display: none;
+          }
+        }
+      }
+      .panel-content {
+        display: none;
+  
+        .panel-style {
+          display: flex;
+          flex-flow: row;
+          justify-content: space-evenly;
+          padding-top: 30px;
+          width: 100%;
+  
+          @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+          }
+  
+          .information {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 10px;
+            width: 50%;
+  
+            @media (max-width: 1000px) {
+              width: 90%;
+            }
+  
+            .links {
+              display: flex;
+              justify-content: flex-end;
+  
+              @media (max-width: 1200px) {
+                justify-content: center;
+              }
+            }
+  
+            p {
+              font-size: 1.2rem;
+  
+              @media (max-width: 1000px) {
+                font-size: 1rem;
+              }
+            }
+          }
+  
+          .person-img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit:cover;
+            display: flex;
+            align-content: flex-end;
+            padding: 10px;
+  
+            @media (max-width: 350px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+  
+      .showContent {
+        display: block;
+        
+       
+       
+      }
+    }
+  }
+  
+  .marginAdded {
+    margin-top: 50px;
+  }
