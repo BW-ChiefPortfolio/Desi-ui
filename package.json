@@ -1,0 +1,11 @@
+{
+    "name": "Desi-ui",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/BW-ChiefPortfolio/Desi-ui.git",
+    "author": "Desi <decurry48@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+      "less": "^3.9.0"
+    }
+  }
